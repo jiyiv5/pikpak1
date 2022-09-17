@@ -1,13 +1,13 @@
 export const proxy = [
-  'https://diii.tk',
-  'https://api-pikpak.tjsky.cf',
-  'https://api-pikpak.tjsky-1.cf',
-  'https://pikpak.he13797739994.ga',
-  'https://pikpak.hdddd.me',
-  'https://pan.yooyi.tk',
-  'https://pikpak.nsso.eu.org',
-  'https://pikpak-web.wnbh.cf',
-  'https://pk.pikpakz.top',
+  'https://cors.z13.workers.dev',
+  'https://cors.z14.workers.dev',
+  'https://cors.z17.workers.dev',
+  'https://cors.z16.workers.dev',
+  'https://cors.z15.workers.dev',
+  'https://pikpak.271934.workers.dev',
+  'https://pikpak.1875434541.workers.dev',
+  'https://pipak.httpswwwtjskynetgotourlhttpsgithubcommumuchenchen.workers.dev',
+  'https://pikpak.xzha.workers.dev',
 ]
 
 export const version = '1.23.0'
