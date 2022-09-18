@@ -32,10 +32,6 @@ addEventListener('fetch', event => {
         else if(url.length < 3 || url.indexOf('.') == -1 || url == "favicon.ico" || url == "robots.txt") {
             return Response.redirect('https://baidu.com', 301)
         }
-        //阻断
-        else if (blocker.check(url)) {
-            return Response.redirect('https://baidu.com', 301)
-        }
         else {
             //补上前缀 http://
             url = url.replace(/https:(\/)*/,'https://').replace(/http:(\/)*/, 'http://')
@@ -122,14 +118,3 @@ addEventListener('fetch', event => {
     // return new Response('OK', { status: 200 })
   }
   
-  /**
-  * 阻断器
-  */
-  const blocker = {
-    keys: [".m3u8", ".ts", ".acc", ".m4s", "photocall.tv", "googlevideo.com"],
-    check: function (url) {
-        url = url.toLowerCase();
-        let len = blocker.keys.filter(x => url.includes(x)).length;
-        return len != 0;
-    }
-  }
